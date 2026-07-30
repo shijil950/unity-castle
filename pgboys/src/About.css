@@ -1,0 +1,107 @@
+.about-section {
+  padding: 80px 50px;
+  background: #ffffff;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-text span {
+  color: #ffaa00;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: #0a1128;
+  margin: 10px 0 20px 0;
+}
+
+.about-text p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.about-highlights {
+  display: flex;
+  gap: 30px;
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-item strong {
+  font-size: 24px;
+  color: #0a1128;
+}
+
+.highlight-item span {
+  font-size: 12px;
+  color: #6b7280;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.about-card-box {
+  background: #0a1128;
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  border-left: 5px solid #ffaa00;
+}
+
+.about-card-box h3 {
+  color: #ffaa00;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about-card-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 13px;
+  color: #e5e7eb;
+}
+
+/* മൊബൈൽ സ്ക്രീനുകൾക്കായി (Mobile Screen Media Query) */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px; /* മൊബൈലിൽ പാഡിങ് കുറച്ച് ഒതുക്കമുള്ളതാക്കുന്നു */
+  }
+
+  .about-container {
+    grid-template-columns: 1fr !important; /* മൊബൈലിൽ ഒറ്റ കോളമായി താഴെ താഴെ വരും */
+    gap: 30px;
+  }
+
+  .about-highlights {
+    gap: 15px; /* ഹൈലൈറ്റ്സ് തമ്മിലുള്ള ഗ്യാപ് ക്രമീകരിക്കുന്നു */
+  }
+
+  .highlight-item strong {
+    font-size: 20px;
+  }
+
+  .about-text h2 {
+    font-size: 24px; /* മൊബൈലിൽ ഹെഡിങ് സൈസ് ചെറുതാക്കുന്നു */
+  }
+
+  .about-card-box {
+    padding: 25px 20px;
+  }
+}

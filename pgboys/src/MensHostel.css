@@ -1,0 +1,117 @@
+.mens-section {
+  padding: 90px 50px;
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title span {
+  color: #ffaa00;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  font-size: 34px;
+  color: #0a1128;
+  margin-top: 5px;
+}
+
+.section-title p {
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.room-card {
+  background: #0a1128;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 35px 25px;
+  box-shadow: 0 10px 25px rgba(10, 17, 40, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 4px solid #ffaa00;
+}
+
+.room-header h3 {
+  font-size: 22px;
+  color: #ffaa00;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.room-card p {
+  font-size: 13px;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  list-style: none;
+  font-size: 13px;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 15px;
+  margin-bottom: 25px;
+}
+
+.book-btn {
+  display: block;
+  text-align: center;
+  background: #ffaa00;
+  color: #0a1128;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #e69500;
+}
+.room-card, .service-card, .girls-info-box, .girls-card-box {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
+
+.room-card:hover, .service-card:hover {
+  transform: translateY(-10px) scale(1.02); /* ചെറുതായി വലുതായി പൊങ്ങിവരും */
+  box-shadow: 0 20px 35px rgba(10, 17, 40, 0.15);
+}
+/* മൊബൈൽ സ്ക്രീനുകൾക്കായി (Mobile Screen Media Query) */
+@media (max-width: 768px) {
+  .rooms-grid, 
+  .services-grid, 
+  .girls-grid, 
+  .contact-container {
+    grid-template-columns: 1fr !important;
+    padding: 0 10px;
+  }
+}
