@@ -7,7 +7,7 @@ import MensHostel from './MensHostel';
 import GirlsHostel from './GirlsHostel';
 import Services from './Services';
 import Contact from './Contact';
-import About from './about';
+import About from './About';
 
 function App() {
   return (
