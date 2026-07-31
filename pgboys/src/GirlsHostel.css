@@ -1,6 +1,8 @@
 .girls-section {
   padding: 90px 50px;
   background: #fdf4f5; /* ഗേൾസ് സെക്ഷന് ഇത്തിരി സോഫ്റ്റ് ആയ റോസ്/ന്യൂട്രൽ ടോൺ */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -34,6 +36,8 @@
   gap: 30px;
   max-width: 1150px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .girls-card {
@@ -45,6 +49,7 @@
   border: 1px solid #f1f5f9;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .girls-card:hover {
@@ -60,6 +65,7 @@
   position: relative;
   text-align: center;
   border-bottom: 4px solid #e63946;
+  box-sizing: border-box;
 }
 
 .girls-tag {
@@ -106,6 +112,7 @@
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .girls-card-body p {
@@ -140,6 +147,7 @@
   font-weight: bold;
   font-size: 13px;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .girls-book-btn:hover {
@@ -148,13 +156,33 @@
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
 }
+
 /* മൊബൈൽ സ്ക്രീനുകൾക്കായി (Mobile Screen Media Query) */
 @media (max-width: 768px) {
-  .rooms-grid, 
-  .services-grid, 
-  .girls-grid, 
-  .contact-container {
-    grid-template-columns: 1fr !important;
-    padding: 0 10px;
+  .girls-section {
+    padding: 40px 10px;
+  }
+
+  .girls-grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* Phone-il 2 columns aayittu side-by-side varum */
+    gap: 15px !important;
+    padding: 0;
+    width: 100%;
+  }
+
+  .girls-card-header {
+    padding: 20px 15px;
+  }
+
+  .girls-card-body {
+    padding: 20px 15px;
+  }
+
+  .girls-card-header h3 {
+    font-size: 18px;
+  }
+
+  .price-val {
+    font-size: 22px;
   }
 }

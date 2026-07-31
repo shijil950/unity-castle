@@ -14,9 +14,9 @@ function Navbar() {
         </div>
       </div>
       <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#mens">Men's Hostel</a></li>
-        <li><a href="#girls">Girls PG</a></li>
+        {/* <li><a href="#Home">Home</a></li> */}
+        {/* <li><a href="#mens">Men's Hostel</a></li> */}
+        {/* <li><a href="#GirlsHostel">Girls PG</a></li> */}
         <li><a href="#services">Services</a></li>
         <li><a href="#contact" className="nav-btn">Contact Us</a></li>
       </ul>

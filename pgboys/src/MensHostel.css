@@ -1,6 +1,8 @@
 .mens-section {
   padding: 90px 50px;
   background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -34,6 +36,8 @@
   gap: 30px;
   max-width: 1150px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .room-card {
@@ -46,6 +50,7 @@
   flex-direction: column;
   justify-content: space-between;
   border-top: 4px solid #ffaa00;
+  box-sizing: border-box;
 }
 
 .room-header h3 {
@@ -97,21 +102,45 @@
 .book-btn:hover {
   background: #e69500;
 }
+
 .room-card, .service-card, .girls-info-box, .girls-card-box {
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
 }
 
 .room-card:hover, .service-card:hover {
-  transform: translateY(-10px) scale(1.02); /* ചെറുതായി വലുതായി പൊങ്ങിവരും */
+  transform: translateY(-10px) scale(1.02);
   box-shadow: 0 20px 35px rgba(10, 17, 40, 0.15);
 }
+
 /* മൊബൈൽ സ്ക്രീനുകൾക്കായി (Mobile Screen Media Query) */
 @media (max-width: 768px) {
+  .mens-section {
+    padding: 40px 10px;
+  }
+
   .rooms-grid, 
   .services-grid, 
-  .girls-grid, 
+  .girls-grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* Phone-il 2 columns aayittu side-by-side varum */
+    gap: 15px !important;
+    padding: 0;
+    width: 100%;
+  }
+
   .contact-container {
     grid-template-columns: 1fr !important;
     padding: 0 10px;
+  }
+
+  .room-card {
+    padding: 20px 15px; /* Mobile-il card padding adjust cheythu */
+  }
+
+  .room-header h3 {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 16px;
   }
 }
