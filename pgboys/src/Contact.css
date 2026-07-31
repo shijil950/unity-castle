@@ -1,187 +1,150 @@
 .contact-section {
-  padding: 90px 50px;
-  background: #f8fafc;
+  padding: 60px 20px;
+  background-color: #f1f5f9;
 }
 
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  max-width: 1150px;
+  gap: 30px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.contact-info {
-  background: #0a1128;
+/* Dark Info Card */
+.contact-info-card {
+  background-color: #0b1329;
   color: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  border: 1px solid rgba(255, 170, 0, 0.2);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info h3 {
+.contact-email {
   color: #ffaa00;
-  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.contact-info p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #d1d5db;
-}
-
-.contact-info a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.contact-info a:hover {
-  color: #ffaa00;
-}
-
-.address-block {
+.address-box {
   background: rgba(255, 255, 255, 0.05);
-  padding: 8px 12px;
-  border-radius: 6px;
-  border-left: 3px solid #ffaa00;
-}
-
-/* ഇൻസ്റ്റാഗ്രാം ഡിവിഡറും ലളിതമായ ബട്ടണും */
-.insta-divider {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 5px 0;
-  color: #94a3b8;
-  font-size: 13px;
+  gap: 12px;
 }
 
-.insta-divider::before,
-.insta-divider::after {
-  content: '';
-  flex: 1;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.insta-divider span {
-  padding: 0 10px;
-}
-
-.insta-banner-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #070d1f;
-  padding: 12px 24px;
-  border-radius: 50px;
-  border: 2px solid transparent;
-  background-image: linear-gradient(#070d1f, #070d1f), 
-                    linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.2);
-}
-
-.insta-text-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  text-align: center;
-}
-
-.insta-main-title {
-  font-size: 20px;
-  font-family: 'Brush Script MT', cursive, sans-serif;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.insta-arrow-circle {
-  width: 34px;
-  height: 34px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
+.address-box h4 {
   font-size: 14px;
-  transition: background 0.3s;
+  color: #ffaa00;
+  margin-bottom: 5px;
 }
 
-.insta-banner-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(220, 39, 67, 0.4);
+.address-box p {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.4;
 }
 
-.insta-banner-card:hover .insta-arrow-circle {
-  background: rgba(255, 255, 255, 0.1);
+.nearby-info {
+  font-size: 13px;
+  color: #e2e8f0;
+  margin: 20px 0;
+  padding: 10px;
+  background: rgba(255, 170, 0, 0.1);
+  border-left: 4px solid #ffaa00;
+  border-radius: 4px;
 }
 
-.contact-box {
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  border-top: 4px solid #ffaa00;
+.instagram-section {
+  text-align: center;
+  margin-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
 }
 
-.contact-box h3 {
-  color: #0a1128;
+.instagram-section p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.instagram-btn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Light Form Card */
+.contact-form-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 2px solid #ffaa00;
+}
+
+.contact-form-card h3 {
+  text-align: center;
+  color: #0b1329;
+  margin-bottom: 25px;
   font-size: 20px;
+}
+
+.form-group {
   margin-bottom: 20px;
 }
 
-.contact-box form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-box input,
-.contact-box select,
-.contact-box textarea {
-  padding: 12px;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
-  font-size: 13px;
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
   outline: none;
+  background: #f8fafc;
+  box-sizing: border-box;
 }
 
-.contact-box input:focus,
-.contact-box select:focus,
-.contact-box textarea:focus {
+.form-group input:focus,
+.form-group select:focus {
   border-color: #ffaa00;
 }
 
-.submit-btn {
-  background: #25d366;
-  color: #ffffff;
-  border: none;
+.whatsapp-submit-btn {
+  width: 100%;
   padding: 12px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
   font-weight: bold;
-  font-size: 14px;
-  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  transition: background 0.3s;
 }
 
-.submit-btn:hover {
-  background: #20ba5a;
-  transform: translateY(-2px);
+.whatsapp-submit-btn:hover {
+  background-color: #1ebe5d;
 }
 
-/* മൊബൈൽ വ്യൂവിനായി മീഡിയ ക്വറി */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .contact-container {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr; /* Phone-il single column aayi varum */
     padding: 0 10px;
   }
 }

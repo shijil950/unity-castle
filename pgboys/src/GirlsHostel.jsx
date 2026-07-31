@@ -1,7 +1,7 @@
 import React from 'react';
 import './GirlsHostel.css';
 
-function GirlsHostel() {
+function GirlsHostel({ setCurrentPage }) {
   const girlsRooms = [
     { 
       type: '2 Sharing Room', 
@@ -28,6 +28,17 @@ function GirlsHostel() {
       features: ['Comfortable Bed', 'Individual Storage Box', 'Nutritious Food Facility', 'Secure Campus with CCTV']
     },
   ];
+
+  // Book button click cheythal Home-ilekku poyi Contact section-ilekk scroll aavan
+  const handleBooking = () => {
+    setCurrentPage('home');
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   return (
     <section id="girls" className="girls-section">
@@ -56,7 +67,10 @@ function GirlsHostel() {
                   <li key={i}>✓ {perk}</li>
                 ))}
               </ul>
-              <a href="#contact" className="girls-book-btn">Book Girls PG Room</a>
+              {/* Call handleBooking function on click */}
+              <button onClick={handleBooking} className="girls-book-btn">
+                Book Girls PG Room
+              </button>
             </div>
           </div>
         ))}

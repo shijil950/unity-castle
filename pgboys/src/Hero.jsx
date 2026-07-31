@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
-function Hero() {
+function Hero({ setCurrentPage }) {
   return (
     <section className="hero-section">
       <div className="hero-overlay">
@@ -15,12 +15,15 @@ function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#mens-hostel" className="primary-btn">
+            {/* Men's PG click cheythal 'mens' page-ilekk povum */}
+            <button onClick={() => setCurrentPage('mens')} className="primary-btn">
               Explore Men's Hostel
-            </a>
-            <a href="#girls-pg" className="secondary-btn">
+            </button>
+            
+            {/* Girls PG click cheythal 'girls' page-ilekk povum */}
+            <button onClick={() => setCurrentPage('girls')} className="secondary-btn">
               Explore Girls PG
-            </a>
+            </button>
           </div>
         </div>
       </div>

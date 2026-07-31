@@ -1,6 +1,8 @@
 .services-section {
-  padding: 90px 50px;
+  padding: 50px 20px;
   background: #ffffff;
+  width: 100%;
+  box-sizing: border-box; /* Width calculation correct aakkaan */
 }
 
 .services-grid {
@@ -9,14 +11,16 @@
   gap: 30px;
   max-width: 1150px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .service-card {
   background: #f8fafc;
-  padding: 30px;
+  padding: 25px 20px;
   border-radius: 10px;
   border: 1px solid #e2e8f0;
   transition: transform 0.3s;
+  box-sizing: border-box; /* Box width overflow ozhivakkan */
 }
 
 .service-card:hover {
@@ -40,11 +44,27 @@
   color: #64748b;
   line-height: 1.5;
 }
-/* മൊബൈൽ സ്ക്രീനുകൾക്കായി (Mobile Screen Media Query) */
+
+/* Mobile Screen Adjustments */
 @media (max-width: 768px) {
-  .rooms-grid, 
-  .services-grid, 
-  .girls-grid, 
+  .services-section {
+    padding: 30px 10px; /* Padding kurakkuka */
+  }
+
+  .services-grid,
+  .rooms-grid,
+  .girls-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .service-card {
+    padding: 15px 10px; /* Card-inte padding mobile-il adjust cheyyunnu */
+  }
+
   .contact-container {
     grid-template-columns: 1fr !important;
     padding: 0 10px;

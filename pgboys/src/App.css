@@ -34,3 +34,33 @@ body {
 .animate-fade-up {
   animation: fadeInUp 0.8s ease-in-out forwards;
 }
+/* Back button container styling */
+.back-btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Attractive Back Button Design */
+.custom-back-btn {
+  background-color: #0f172a; /* Dark navy theme color matching your navbar */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.custom-back-btn:hover {
+  background-color: #ff9800; /* Accent color on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}

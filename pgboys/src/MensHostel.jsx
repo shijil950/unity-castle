@@ -1,12 +1,23 @@
 import React from 'react';
 import './MensHostel.css';
 
-function MensHostel() {
+function MensHostel({ setCurrentPage }) {
   const rooms = [
     { title: 'Two Sharing', price: '₹95,000 / year', desc: 'Comfortable living space for two with individual amenities.' },
     { title: 'Three Sharing', price: '₹90,000 / year', desc: 'Spacious triple sharing rooms designed for students.' },
     { title: 'Four Sharing', price: '₹80,000 / year', desc: 'Affordable and budget-friendly shared room option.' },
   ];
+
+  // Book button click cheythal Home-ilekku poyi Contact section-ilekk scroll aavan
+  const handleBooking = () => {
+    setCurrentPage('home');
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Small delay to let home page render first
+  };
 
   return (
     <section id="mens" className="mens-section">
@@ -28,7 +39,10 @@ function MensHostel() {
               <li>✓ Share Laughter, Share Space, Share Life</li>
               <li>✓ Secure & Peaceful Environment</li>
             </ul>
-            <a href="#contact" className="book-btn">Book Men's Room</a>
+            {/* Call handleBooking function on click */}
+            <button onClick={handleBooking} className="book-btn">
+              Book Men's Room
+            </button>
           </div>
         ))}
       </div>
