@@ -19,7 +19,7 @@ function Contact() {
                     `*Phone:* ${formData.phone}\n` +
                     `*Hostel Type:* ${formData.hostelType}`;
 
-    const whatsappUrl = `https://wa.me/919448123456?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/ 63641 01768?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -92,7 +92,7 @@ function Contact() {
 
           <div className="instagram-section">
             <p>Follow us on Instagram:</p>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="instagram-btn">
+            <a href="https://www.instagram.com/unitycastlepg?igsh=MWFwNTZrbHB3MGdkcQ==" target="_blank" rel="noopener noreferrer" className="instagram-btn">
               <span>Instagram</span>
               <span className="arrow-icon">→</span>
             </a>
