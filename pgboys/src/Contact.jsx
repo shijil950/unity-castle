@@ -92,7 +92,7 @@ function Contact() {
 
           <div className="instagram-section">
             <p>Follow us on Instagram:</p>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="instagram-btn">
+            <a href="https://www.instagram.com/unitycastlepg?igsh=MWFwNTZrbHB3MGdkcQ==" target="_blank" rel="noopener noreferrer" className="instagram-btn">
               <span>Instagram</span>
               <span className="arrow-icon">→</span>
             </a>

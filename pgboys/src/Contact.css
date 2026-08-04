@@ -115,8 +115,19 @@
   border-radius: 8px;
   font-size: 14px;
   outline: none;
-  background: #f8fafc;
+  
+  /* Added/Fixed properties for cross-device consistency */
+  background-color: #f8fafc !important;
+  color: #1e293b !important;
+  -webkit-appearance: none; /* Removes default mobile browser styling quirks */
+  appearance: none;
   box-sizing: border-box;
+}
+
+/* Explicit Placeholder Styling to prevent invisibility on mobile */
+.form-group input::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
 }
 
 .form-group input:focus,
